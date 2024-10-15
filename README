@@ -17,5 +17,5 @@ The module is meant to be used for a Distributed self-training with FPGA based a
 -   Check the argument module in server_full for handling labelled and training and validation data. Current module assumes the D4 should be the controller and will manage the data handling for self-training and validation. The code assumes the data directory paths which can be provided as inpute argument while running the code. e.g.
 
     '''
-    python3 serverfull.py ----unlabeled_dataPath dir/path --GT_dataPathTrain dir/path --GT_dataPathVal dir/path
+    python3 serverfull.py --unlabeled_dataPath dir/path --GT_dataPathTrain dir/path --GT_dataPathVal dir/path
     '''    
