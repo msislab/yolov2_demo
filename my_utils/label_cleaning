@@ -1,0 +1,13 @@
+from read_files import read_yaml
+
+data_path = '/home/zafar/Yolov5_DeepSORT_PseudoLabels/yolov5/waymo.yaml'
+cleaned_label_path = '/home/zafar/old_pc/data_sets/waymo_dataset/3class_waymo/3class_waymo_dataset/cleaned_waymo'
+
+read_yaml(           \
+data_path,            \
+cleaned_label_path,    \
+True,                   \
+min_w=17,                \
+min_h=17,                 \
+ar=5                       \
+)
