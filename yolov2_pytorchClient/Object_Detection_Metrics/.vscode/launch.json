@@ -1,0 +1,34 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: pascal voc metrics",
+            "type": "python",
+            "request": "launch",
+            "program": "pascalvoc.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args":[
+                "-gt",
+                "/home/zafar/old_pc/data_sets/BDD_dataset/Bdd_uncleaned/3class_bdd/val_test",
+                "-det",
+                "/home/zafar/old_pc/data_sets/BDD_dataset/Bdd_uncleaned/3class_bdd/val_test",
+                "-gtformat",
+                "xywh",
+                "-detformat",
+                "xywh",
+                "-gtcoords",
+                "rel",
+                "-detcoords",
+                "rel",
+                "-imgsize",
+                "1280,720",
+                "--call_with_train",
+                "True"
+            ]
+        }
+    ]
+}

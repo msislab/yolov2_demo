@@ -1,0 +1,28 @@
+# YOLOv5 🚀 by Ultralytics, GPL-3.0 license
+# COCO 2017 dataset http://cocodataset.org by Microsoft
+# Example usage: python train.py --data coco.yaml
+# parent
+# ├── yolov5
+# └── datasets
+#     └── coco  ← downloads here
+# path: /home/gpuadmin/ZPD/Bdd_uncleaned/3class_bdd
+
+
+# train: /home/gpuadmin/ZPD/Bdd_uncleaned/3class_bdd/train20k.txt
+# val: /home/gpuadmin/ZPD/Bdd_uncleaned/3class_bdd/val5k.txt
+# test: /home/gpuadmin/ZPD/Bdd_uncleaned/3class_bdd/val5k.txt
+
+# val_dir: /home/gpuadmin/ZPD/Bdd_uncleaned/3class_bdd/val5k
+
+path: /home/zafar/old_pc/data_sets/BDD_dataset/
+
+train: /home/zafar/old_pc/data_sets/BDD_dataset/Bdd_uncleaned/3class_bdd/train5k.txt
+val: /home/zafar/old_pc/data_sets/BDD_dataset/cleaned_BDD/val5k.txt
+test: /home/zafar/old_pc/data_sets/BDD_dataset/cleaned_BDD/val5k.txt
+
+val_dir: /home/zafar/old_pc/data_sets/BDD_dataset/cleaned_BDD/val5k
+
+# Classes
+nc: 3  # number of classes
+# names: ["car","bus","truck","motorcycle","bicycle","trailer","train","rider","pedestrian","traffic light","traffic sign","other vehicle","other person"]  # class names
+names: ["Vehicle", "Rider", "Pedestrian"]
